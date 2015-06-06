@@ -2,7 +2,11 @@ function display(arr, id) {
     var out = "";
     var i;
     for(i = 0; i < arr.length; i++) {
-        out += '<a href="' + arr[i].url + '">' + arr[i].display + '</a><br>';
+        out += '<h3>' + arr[i].title + '</h3>';
+
+		for (j=0; j< arr[i].text.length; j++) {
+			 out += '<p>' + arr[i].text[j] + '</p>';
+		}
     }
 	document.getElementById(id).innerHTML=out;
 }
@@ -22,8 +26,6 @@ function getData(url, id) {
 		raw=3333;
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			raw=xmlhttp.responseText;
-			//console.log("the url is: " + url);
-			console.log("hello\n" + raw + "\nbye");
 			arr = JSON.parse(raw);
 			display(arr, id);
 			console.log(arr);

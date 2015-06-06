@@ -1,14 +1,20 @@
 [
 {
-"display": "JavaScript Tutorial",
-"url": "http://www.w3schools.com/js/default.asp"
+"title": "JavaScript Tutorial",
+"text": ["first line", "2nd line"] 
 },
 {
-"display": "HTML Tutorial",
-"url": "http://www.w3schools.com/html/default.asp"
+"title": "JSON notes",
+"text": ["Important stuff I did not see in the documentation",
+	 "Only double quotes are allowed - else parse will fail",
+	"In arrays of objects - each must have all the same elements."] 
 },
 {
-"display": "CSS Tutorial",
-"url": "http://www.w3schools.com/css/default.asp"
+"title": "Empty array is okay",
+"text": [] 
+},
+{
+"title": "Curating one's life",
+"text": ["what"] 
 }
 ]
